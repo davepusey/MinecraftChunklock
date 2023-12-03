@@ -1,0 +1,33 @@
+{
+  "parent": "chunklock:main/chunks_unlocked_5",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_block"
+    },
+    "title": {
+      "text": "Chunk God"
+    },
+    "description": {
+      "text": "Unlock 1024 chunks"
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ChunklockTotalUnlockedChunks": {
+                "min": 1024
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "parent": "chunklock:main/root",
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;-1031171348,-2121970546,-1573979585,132393714],Name:\"AvidYt\",Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY5NDgwMDM2NzA1MywKICAicHJvZmlsZUlkIiA6ICJjMjg5OTJlYzgxODU0YzhlYTIyZWZhM2YwN2U0MmFmMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJBdmlkWXQiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWY1NzlhNzI5ODExN2Y3YjdjZWY1YTJkZWEwOTYzZDgzZTg4ZWMyM2MwODRkN2U3YjM3NzliMjhkY2NlOGI4OCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9\"}]}}}"
+        },
+        "title": {
+            "text": "By AvidMc"
+        },
+        "description": {
+            "text": "Co-Creator of Chunklock"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

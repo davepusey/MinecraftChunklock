@@ -1,0 +1,21 @@
+{
+  "parent": "chunklock:main/chunk_item_nether_brick",
+  "display": {
+    "icon": {
+      "item": "minecraft:ancient_debris"
+    },
+    "title": {
+      "text": "A Hefty Price"
+    },
+    "description": {
+      "text": "Unlock a chunk using Ancient Debris"
+    },
+    "hidden": false,
+    "frame": "challenge"
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

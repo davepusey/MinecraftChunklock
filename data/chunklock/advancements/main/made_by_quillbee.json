@@ -1,0 +1,23 @@
+{
+    "parent": "chunklock:main/made_by_avidmc",
+    "display": {
+        "icon": {
+            "item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;1078544129,2044152311,-1416172639,485612934],Name:\"Quillbee\",Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY5NDgwNTYwMTIzMCwKICAicHJvZmlsZUlkIiA6ICI0MDQ5NDcwMTc5ZDc0OWY3YWI5NmViYTExY2YxZGQ4NiIsCiAgInByb2ZpbGVOYW1lIiA6ICJRdWlsbGJlZSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9jNzNkYWQ2NDcwYzhjNzAxMjg0NzliMmVkZWJmYjMxYmJiZDIwNGY5NjAzMWEyY2NkMmY1OTJlNzE1OTYyNmQ0IgogICAgfQogIH0KfQ==\"}]}}}"
+        },
+        "title": {
+            "text": "And Quillbee"
+        },
+        "description": {
+            "text": "Co-Creator of Chunklock"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "frame": "challenge"
+    },
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

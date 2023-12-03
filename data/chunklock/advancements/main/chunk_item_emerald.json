@@ -1,0 +1,20 @@
+{
+  "parent": "chunklock:main/chunk_item_gold_ingot",
+  "display": {
+    "icon": {
+      "item": "minecraft:emerald"
+    },
+    "title": {
+      "text": "A Green Gift"
+    },
+    "description": {
+      "text": "Unlock a chunk using an emerald"
+    },
+    "hidden": false
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

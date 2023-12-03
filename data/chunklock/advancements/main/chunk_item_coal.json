@@ -1,0 +1,20 @@
+{
+  "parent": "chunklock:main/chunk_item_stone",
+  "display": {
+    "icon": {
+      "item": "minecraft:coal"
+    },
+    "title": {
+      "text": "A Coal Cost"
+    },
+    "description": {
+      "text": "Unlock a chunk using a piece of Coal"
+    },
+    "hidden": false
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

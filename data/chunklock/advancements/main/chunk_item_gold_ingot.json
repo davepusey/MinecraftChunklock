@@ -1,0 +1,20 @@
+{
+  "parent": "chunklock:main/chunk_item_iron_ingot",
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+    "title": {
+      "text": "A Golden Gift"
+    },
+    "description": {
+      "text": "Unlock a chunk using a Gold Ingot"
+    },
+    "hidden": false
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

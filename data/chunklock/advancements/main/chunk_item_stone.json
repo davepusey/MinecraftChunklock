@@ -1,0 +1,20 @@
+{
+  "parent": "chunklock:main/chunks_overworld_unlocked_1",
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
+    },
+    "title": {
+      "text": "A Stone Cold Offer"
+    },
+    "description": {
+      "text": "Unlock a chunk using a piece of Stone"
+    },
+    "hidden": false
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

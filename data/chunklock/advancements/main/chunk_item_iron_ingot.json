@@ -1,0 +1,20 @@
+{
+  "parent": "chunklock:main/chunk_item_coal",
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_ingot"
+    },
+    "title": {
+      "text": "An Ironic Tribute"
+    },
+    "description": {
+      "text": "Unlock a chunk using an Iron Ingot"
+    },
+    "hidden": false
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

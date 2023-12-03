@@ -1,0 +1,33 @@
+{
+  "parent": "chunklock:main/chunks_nether_unlocked_1",
+  "display": {
+    "icon": {
+      "item": "minecraft:end_stone"
+    },
+    "title": {
+      "text": "Chunklock Endgame"
+    },
+    "description": {
+      "text": "Unlock your first chunk in the End"
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "ChunklockEndUnlockedChunks": {
+                "min": 1
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

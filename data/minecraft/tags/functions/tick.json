@@ -1,0 +1,7 @@
+{
+  "values": [
+    "chunklock:pre_tick",
+    "chunklock:tick",
+    "chunklock:post_tick"
+  ]
+}

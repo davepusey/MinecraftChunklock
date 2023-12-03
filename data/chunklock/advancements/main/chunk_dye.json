@@ -1,0 +1,21 @@
+{
+    "parent": "chunklock:main/made_by_quillbee",
+    "display": {
+      "icon": {
+        "item": "minecraft:red_dye"
+      },
+      "title": {
+        "text": "Chunk Dyer"
+      },
+      "description": {
+        "text": "Change the color of a chunk"
+      },
+      "frame": "task",
+      "hidden": true
+    },
+    "criteria": {
+        "chunksUnlocked": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+  }

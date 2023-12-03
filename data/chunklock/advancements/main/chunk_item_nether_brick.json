@@ -1,0 +1,20 @@
+{
+  "parent": "chunklock:main/chunks_nether_unlocked_1",
+  "display": {
+    "icon": {
+      "item": "minecraft:nether_brick"
+    },
+    "title": {
+      "text": "Just Another Brick in The Chunk"
+    },
+    "description": {
+      "text": "Unlock a chunk using Nether Brick"
+    },
+    "hidden": false
+  },
+  "criteria": {
+    "chunksUnlocked": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
