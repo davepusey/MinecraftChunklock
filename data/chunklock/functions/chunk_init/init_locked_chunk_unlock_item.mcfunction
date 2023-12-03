@@ -16,6 +16,39 @@ data modify entity @s data.source set from entity @e[tag=chunkItemInit,sort=near
 # We no longer need the armorstand, so kill it
 kill @e[tag=chunkItemInit,sort=nearest,limit=1]
 
+
+
+# DP - OVERWORLD
+# DP: Get the rolled item name, minus the "minecraft:" prefix
+execute if dimension minecraft:overworld run data modify storage minecraft:map_bat CustomName set string entity @s data.source.id 10
+# DP: Create a sign for text resolution
+execute if dimension minecraft:overworld run setblock ~ 319 ~ minecraft:oak_sign
+# DP: Put item name onto sign from storage
+execute if dimension minecraft:overworld run data modify block ~ 319 ~ front_text.messages[0] set value '[{"storage": "minecraft:map_bat", "nbt":"CustomName"}]'
+# DP: Create a giant to act as the icon for the map
+execute if dimension minecraft:overworld run summon giant ~ 318 ~ {BatFlags:1,CustomName:'[{"text":"CustomName"}]',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b}
+# DP: Put item name onto giant from sign
+execute if dimension minecraft:overworld positioned ~ 318 ~ run data modify entity @e[type=minecraft:giant,limit=1,sort=nearest] CustomName set from block ~ 319 ~ front_text.messages[0]
+execute if dimension minecraft:overworld run setblock ~ 319 ~ minecraft:barrier
+
+
+# DP - NETHER
+# DP: Get the rolled item name, minus the "minecraft:" prefix
+execute if dimension minecraft:the_nether run data modify storage minecraft:map_bat CustomName set string entity @s data.source.id 10
+# DP: Create a sign for text resolution
+execute if dimension minecraft:the_nether run setblock ~ 130 ~ minecraft:oak_sign
+# DP: Put item name onto sign from storage
+execute if dimension minecraft:the_nether run data modify block ~ 130 ~ front_text.messages[0] set value '[{"storage": "minecraft:map_bat", "nbt":"CustomName"}]'
+# DP: Create a giant to act as the icon for the map
+execute if dimension minecraft:the_nether run summon giant ~ 129 ~ {BatFlags:1,CustomName:'[{"text":"CustomName"}]',CustomNameVisible:1b,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Silent:1b}
+# DP: Put item name onto giant from sign
+execute if dimension minecraft:the_nether positioned ~ 129 ~ run data modify entity @e[type=minecraft:giant,limit=1,sort=nearest] CustomName set from block ~ 130 ~ front_text.messages[0]
+execute if dimension minecraft:the_nether run setblock ~ 130 ~ minecraft:barrier
+
+
+
+
+
 # Set a scoreboard tied to the quantity of the item rolled
 execute store result score @s ChunklockChunkItemCount run data get entity @s data.source.Count
 

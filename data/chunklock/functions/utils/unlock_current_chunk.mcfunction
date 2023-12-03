@@ -1,6 +1,14 @@
 tag @s remove locked
 tag @s add unlocked
 
+execute if dimension minecraft:overworld run fill ~-8 318 ~-8 ~7 318 ~7 minecraft:barrier
+execute if dimension minecraft:overworld run fill ~-8 317 ~-8 ~7 319 ~7 minecraft:air
+execute if dimension minecraft:overworld positioned ~ 318 ~ run kill @e[type=minecraft:giant,limit=1,sort=nearest]
+
+execute if dimension minecraft:the_nether run fill ~-8 129 ~-8 ~7 129 ~7 minecraft:barrier
+execute if dimension minecraft:the_nether run fill ~-8 128 ~-8 ~7 130 ~7 minecraft:air
+execute if dimension minecraft:the_nether positioned ~ 128 ~ run kill @e[type=minecraft:giant,limit=1,sort=nearest]
+
 # Kill all block displays and interaction entities directly above and below us
 execute positioned ~-0.5 ~-500 ~-0.5 run kill @e[type=minecraft:block_display,dx=1,dy=9999,dz=1]
 execute positioned ~-0.5 ~-500 ~-0.5 run kill @e[type=minecraft:interaction,dx=1,dy=9999,dz=1]

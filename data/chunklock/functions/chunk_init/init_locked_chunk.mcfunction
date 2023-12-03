@@ -1,3 +1,11 @@
+execute if dimension minecraft:overworld run fill ~-8 317 ~-8 ~7 319 ~7 minecraft:barrier
+execute if dimension minecraft:overworld run fill ~-8 318 ~-8 ~7 318 ~7 minecraft:red_carpet
+execute if dimension minecraft:overworld run fill ~-7 318 ~-7 ~6 318 ~6 minecraft:black_carpet
+
+execute if dimension minecraft:the_nether run fill ~-8 128 ~-8 ~7 130 ~7 minecraft:barrier
+execute if dimension minecraft:the_nether run fill ~-8 129 ~-8 ~7 129 ~7 minecraft:red_carpet
+execute if dimension minecraft:the_nether run fill ~-7 129 ~-7 ~6 129 ~6 minecraft:black_carpet
+
 ################################################################################
 # Block Display
 ################################################################################
