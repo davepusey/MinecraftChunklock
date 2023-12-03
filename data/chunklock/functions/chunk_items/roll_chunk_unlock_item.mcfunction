@@ -6,6 +6,7 @@ loot replace entity @s weapon.mainhand loot chunklock:biome/all_biome
 # TODO: LOW - Do we check the biome at multiple Y levels?
 # TODO: HIGH - End outer islands should require small quanities of random items
 execute if biome ~ ~ ~ badlands run loot replace entity @s weapon.mainhand loot chunklock:biome/badlands
+execute if biome ~ ~ ~ bamboo_jungle run loot replace entity @s weapon.mainhand loot chunklock:biome/bamboo_jungle
 execute if biome ~ ~ ~ basalt_deltas run loot replace entity @s weapon.mainhand loot chunklock:biome/basalt_deltas
 execute if biome ~ ~ ~ beach run loot replace entity @s weapon.mainhand loot chunklock:biome/beach
 execute if biome ~ ~ ~ birch_forest run loot replace entity @s weapon.mainhand loot chunklock:biome/birch_forest
