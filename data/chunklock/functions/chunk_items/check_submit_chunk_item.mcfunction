@@ -25,7 +25,7 @@ execute store result score #itemThrower Uuid4 run data get entity @s Thrower[3]
 execute as @a if score @s Uuid1 = #itemThrower Uuid1 if score @s Uuid2 = #itemThrower Uuid2 if score @s Uuid3 = #itemThrower Uuid3 if score @s Uuid4 = #itemThrower Uuid4 run tag @s add itemThrower
 
 # Process the correct Item
-execute if score @e[type=marker,tag=currentChunk,tag=locked,limit=1] ChunklockChunkItemTest matches 0 run function chunklock:chunk_items/submit_chunk_item_success
+execute unless score davepusey UnlockingDisabled matches 1 if score @e[type=marker,tag=currentChunk,tag=locked,limit=1] ChunklockChunkItemTest matches 0 run function chunklock:chunk_items/submit_chunk_item_success
 
 # Process the incorrect Item
 execute if score @e[type=marker,tag=currentChunk,tag=locked,limit=1] ChunklockChunkItemTest matches 1 run function chunklock:chunk_items/submit_chunk_item_failure
